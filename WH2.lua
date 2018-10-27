@@ -29,6 +29,7 @@ quest = gg.alert("Activate The Function Once in Lobby, And For In Game Select PA
     gg.clearResults()
     gg.alert("Value Not Found, Run Script Again Or Restart The Game")
     end
+    end
     if quest == 2 then
     gg.setRanges(gg.REGION_BAD)
     gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
