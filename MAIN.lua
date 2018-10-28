@@ -26,7 +26,7 @@ function A1()
   player = gg.multiChoice({
     "1.\240\159\147\130 WallHack (90% safe)(Lobby)",
     "2.\240\159\147\130 Color (90% safe)(Lobby)",
-    "3.\240\159\147\130 Micro Antena SD (90% safe)(Landed)",
+    "3.\240\159\147\130 Antena SD (90% safe)(Landed)",
     "Exit"}, nil, "Script By JemJem")
   if player == nil then
   else
