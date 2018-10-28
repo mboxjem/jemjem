@@ -1,4 +1,5 @@
 gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.1.0.1 ***** \n\n\n ChangeLog : \n\n •Fix Function. \n\n •Fix Yellow Color. \n\n •Fix WallHack.")
+gg.alert("WARNING!!! \n\n DONT USE THE COMBO MENU FUNCTION, STILL IN BETA, I WILL FIX IT IN NEXT UPDATE")
 
 function MAIN()
   menu = gg.choice({
