@@ -1,4 +1,4 @@
-quest = gg.alert("Activate The Function Once in Lobby, And For In Game Select PATCH.", "PATCH WH BLINK (Only One Match)", "ACTIVATE CHEAT", "NO", nil)
+quest = gg.alert("Activate The Function Once in Lobby, And For In Game Select PATCH.", "PATCH WH BLINK (One Match)", "ACTIVATE CHEAT", "NO", nil)
     if quest == 0 then
       os.exit()
     end
