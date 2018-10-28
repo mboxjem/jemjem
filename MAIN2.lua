@@ -1,0 +1,1 @@
+gg.alert("THE SCRIPT HAS EXPIRED, PLEASE CONTACT ME FOR MORE DETAIL INFORMATION. \n\n\n ************** BY JEMJEM **************")
