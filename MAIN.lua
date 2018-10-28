@@ -1,4 +1,4 @@
-gg.alert("***JEM VIP ONLINE UPDATE PUBGM*** \n\n V 9.1.0.1 \n\n\n ChangeLog : \n\n •Fix Function. \n\n •Fix Yellow Color. \n\n •Fix WallHack.")
+gg.alert("***JEM VIP PUBGM*** \n\n ***** V 9.1.0.1 ***** \n\n\n ChangeLog : \n\n •Fix Function. \n\n •Fix Yellow Color. \n\n •Fix WallHack.")
 
 function MAIN()
   menu = gg.choice({
