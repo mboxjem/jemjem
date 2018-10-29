@@ -1,4 +1,4 @@
-gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.1.0.4 ***** \n\n\n ChangeLog : \n\n •Fixed Bugs.")
+gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.1.0.4 ***** \n\n\n ChangeLog : \n\n •Fixed Bugs. \n\n •Fixed Antena.")
 
 function MAIN()
   menu = gg.choice({
