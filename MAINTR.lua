@@ -1,4 +1,4 @@
-gg.alert("*** JEM TRIAL PUBGM *** \n\n ***** EXPIRED 2 NOV 18 ***** \n\n\n ChangeLog : \n\n •Fixed Bugs. \n •Fixed color Green. \n •Add optional function for Antena.")
+gg.alert("*** JEM TRIAL PUBGM *** n\n ChangeLog : \n\n •Fixed Bugs. \n •Fixed color Green. \n •Add optional function for Antena.")
 
 function MAIN()
   menu = gg.choice({
