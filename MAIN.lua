@@ -1,11 +1,11 @@
-gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.1.0.4 ***** \n\n\n ChangeLog : \n\n •Fixed Bugs. \n\n •Fixed Antena.")
+gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.1.0.5 ***** \n\n\n ChangeLog : \n\n •Fixed Bugs. \n\n •Fixed Antena.")
 
 function MAIN()
   menu = gg.choice({
     "\240\159\147\130 Player Menu",
     "\240\159\147\130 In Game Menu",
     "\240\159\147\130 Combo Menu",
-    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 9.1.0.4")
+    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 9.1.0.5")
     if menu == 1 then
       A1()
     end
