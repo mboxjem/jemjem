@@ -1,4 +1,5 @@
   gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.alert("Dont Change Weapons After Activating This Function")
   gg.searchNumber("2.3510621e-38;9.5::",
   gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("2.3510621e-38", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
