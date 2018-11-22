@@ -29,7 +29,7 @@ end
 -- Player Menu
 function A1()
   player = gg.multiChoice({
-    "1.\240\159\147\130 WallHack (Lobby)",
+    "1.\240\159\147\130 WallHack 450, 625, 650 (Lobby)",
     "2.\240\159\147\130 Color (Lobby)",
     "3.\240\159\147\130 Antenna Loop (In Game)",
     "Exit"}, nil, "Script By JemJem")
@@ -126,9 +126,9 @@ end
 -- Aim Menu
 function A2()
   aim = gg.multiChoice({
-    "1.\240\159\147\130 Aim Bot (Lobby)",
-    "2.\240\159\147\130 Magic Bullet (Lobby)",
-    "3.\240\159\147\130 Bullet Tracking (Lobby)",
+    "1.\240\159\147\130 Aim Bot (Risk) (Lobby)",
+    "2.\240\159\147\130 Magic Bullet (Risk) (Lobby)",
+    "3.\240\159\147\130 Bullet Tracking (Risk) (Lobby)",
     "4.\240\159\147\130 No Recoil (In Game)",
     "5.\240\159\147\130 No Shake/Jitter (In Game)",
     "Exit"}, nil, "Script By JemJem")
@@ -239,7 +239,7 @@ function A3()
   other = gg.multiChoice({
     "1.\240\159\147\130 Fast Crouch (Lobby)",
     "2.\240\159\147\130 Black Sky (In Game)",
-    "3.\240\159\147\130 Sit Scope (In Game)",
+    "3.\240\159\147\130 Sit Scope (Risk) (In Game)",
     "Exit"}, nil, "Script By JemJem")
   if other == nil then
   else
