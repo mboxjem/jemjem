@@ -139,13 +139,13 @@ function A2()
     if aim[1] == true then
       AB()
     end
-    if aim[4] == true then
+    if aim[2] == true then
       NR()
     end
-    if aim[5] == true then
+    if aim[3] == true then
       NS()
     end
-    if aim[6] == true then
+    if aim[4] == true then
       MAIN()
     end
     MBX = -1
