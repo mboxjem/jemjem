@@ -138,6 +138,7 @@ function A2()
   else
     if aim[1] == true then
       AB()
+    end
     if aim[4] == true then
       NR()
     end
