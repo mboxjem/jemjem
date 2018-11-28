@@ -9,5 +9,5 @@
     gg.toast("Speed Run Medium Ok")
   else
     gg.clearResults()
-    gg.alert("Value Not Found, Run Script Again Or Restart The Game)
+    gg.alert("Value Not Found, Run Script Again Or Restart The Game")
   end
