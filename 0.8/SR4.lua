@@ -9,6 +9,7 @@
       gg.clearResults()
       gg.toast("Hack Canceled")
     end
+    gg.getResults(100)
     gg.editAll(a.A, gg.TYPE_FLOAT)
     gg.clearResults()
     gg.toast("Speed Run Hack Ok")
