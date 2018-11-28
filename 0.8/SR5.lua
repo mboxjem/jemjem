@@ -3,7 +3,7 @@
   gg.searchNumber("1.1~3.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   if gg.getResultCount() <= 100 then
     gg.toast("Value Found")
-    gg.getResults(20)
+    gg.getResults(100)
     gg.editAll("1", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.toast("Speed Run Off Ok")
