@@ -1,5 +1,5 @@
 
-log = gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.5.0.2 ***** \n\n\n PLEASE UPDATE SCRIPT TO V2.1 \n\n Click Copy Link \n\n ChangeLog : \n\n •Add Mantul Menu. \n •New Value.", "Copy Link", "No", nil)
+log = gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.5.0.3 ***** \n\n\n PLEASE UPDATE SCRIPT TO V2.1 \n\n Click Copy Link \n\n ChangeLog : \n\n •Add Mantul Menu. \n •Fix Bug.", "Copy Link", "No", nil)
 if log == 1 then
   gg.copyText("https://www.dropbox.com/s/7qgbz8m4oropt30/JEM%20VIP_Online%20Update_V%202.1.lua?dl=0")
 end
@@ -11,7 +11,7 @@ function MAIN()
     "\240\159\147\130 Aim Menu",
     "\240\159\147\130 Other Menu",
     "\240\159\147\130 Mantul Menu",
-    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 9.5.0.2")
+    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 9.5.0.3")
   if menu == 1 then
     A1()
   end
