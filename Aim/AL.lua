@@ -6,7 +6,7 @@
     gg.getResults(200)
     gg.editAll("-1.0e10", gg.TYPE_FLOAT)
     gg.clearResults()
-    gg.toast("Lock/Ultra Aim Ok")
+    gg.toast("Ultra Aim Ok")
   else
     gg.clearResults()
     gg.alert("Value Not Found, Run Script Again Or Restart The Game")
