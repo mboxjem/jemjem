@@ -5,7 +5,7 @@
     gg.toast("Value Found")
     gg.getResults(10)
     gg.editAll("333.0517578125", gg.TYPE_FLOAT)
-    gg.toast("Sit Scope Aktif")
+    gg.toast("Sit Scope V1 Ok")
     gg.clearResults()
   else
     gg.clearResults()
