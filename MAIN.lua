@@ -1,5 +1,5 @@
 
-gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.5.0.3 ***** \n\n\n The Script Will Be Maintenance, Next Update To V 9.5.0.4, nil)
+gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.5.0.3 ***** \n\n\n The Script Will Be Maintenance, Next Update To V 9.5.0.4")
 
 -- Main Menu
 function MAIN()
