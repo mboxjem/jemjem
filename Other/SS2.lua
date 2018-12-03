@@ -6,7 +6,7 @@
   gg.getResults(100)
   gg.editAll("1,135,081,726", gg.TYPE_DWORD)
   gg.clearResults()
-  gg.toast("Sit Scope Ok")
+  gg.toast("Sit Scope V2 Ok")
   else
   gg.clearResults()
   gg.alert("Value Not Found, Run Script Again Or Restart The Game")
