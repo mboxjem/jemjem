@@ -1,8 +1,5 @@
 
-log = gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.5.0.3 ***** \n\n\n PLEASE UPDATE SCRIPT TO V2.1 \n\n Click Copy Link \n\n ChangeLog : \n\n •Add Mantul Menu. \n •Fix Bug.", "Copy Link", "No", nil)
-if log == 1 then
-  gg.copyText("https://www.dropbox.com/s/7qgbz8m4oropt30/JEM%20VIP_Online%20Update_V%202.1.lua?dl=0")
-end
+gg.alert("*** JEM VIP PUBGM *** \n\n ***** V 9.5.0.3 ***** \n\n\n The Script Will Be Maintenance, Next Update To V 9.5.0.4)
 
 -- Main Menu
 function MAIN()
