@@ -1,4 +1,4 @@
-gg.alert("**** JEM VIP PUBGM **** \n\n ***** V 9.5.0.4 ***** \n\n ChangeLog : \n\n •New Menu. \n •New Value. \n •Fix Bug.")
+gg.alert("**** JEM VIP PUBGM **** \n\n ***** V 9.5.0.5 ***** \n\n ChangeLog : \n\n •Reduce The Headshot And Magic Bullet Value If The Value Too High It's Easy To Get Banned. \n •New Value. \n •Fix Bug.")
 
 -- Main Menu
 function MAIN()
@@ -7,7 +7,7 @@ function MAIN()
     "\240\159\147\130 Aim Menu",
     "\240\159\147\130 Land Menu",
     "\240\159\147\130 Other Menu",
-    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 9.5.0.4")
+    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 9.5.0.5")
   if menu == 1 then
     A1()
   end
