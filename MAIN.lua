@@ -126,7 +126,7 @@ end
 -- Aim Menu
 function A2()
   aim = gg.multiChoice({
-    "1.\240\159\147\130 Aim Bot (Lobby)",
+    "1.\240\159\147\130 Aim Bot (In Game)",
     "2.\240\159\147\130 Ultra Aim (Air Drop Weapons)(In Game)",
     "3.\240\159\147\130 Magic Bullet (In Game)",
     "4.\240\159\147\130 Head Shoot (In Game)",
