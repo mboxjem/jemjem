@@ -1,0 +1,9 @@
+# Contributions by:
+# JemJem
+#
+
+127.0.0.1  localhost
+::1  localhost
+
+# [Pubgm]
+127.0.0.1 cs.mbgame.gamesafe.qq.com
