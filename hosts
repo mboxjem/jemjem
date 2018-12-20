@@ -1,46 +1,10 @@
-127.0.0.1 bugly.qq.com
-127.0.0.1 aexception.bugly.qq.com
-127.0.0.1 ahf.bugly.qq.com
-127.0.0.1 android.bugly.qq.com
-127.0.0.1 astat.bugly.qq.com
-127.0.0.1 beta.bugly.qq.com
-127.0.0.1 cdn.bugly.qq.com
-127.0.0.1 dsx.bugly.qq.com
-127.0.0.1 test-astat.bugly.qq.com
-127.0.0.1 app.adjust.com
+# Contributions by:
+# JemJem
+#
+
+127.0.0.1  localhost
+::1  localhost
+
+# [Pubgm]
 127.0.0.1 cs.mbgame.gamesafe.qq.com
-127.0.0.1 ccsvr.gamesafe.qq.com
-127.0.0.1 compass.gamesafe.qq.com
-127.0.0.1 dump.gamesafe.qq.com
-127.0.0.1 mobiledump.gamesafe.qq.com
-127.0.0.1 safecfg.gamesafe.qq.com
-127.0.0.1 tasver.gamesafe.qq.com
-127.0.0.1 tqos.gamesafe.qq.com
-127.0.0.1 uic.gamesafe.qq.com
-127.0.0.1 wktest.gamesafe.qq.com
-127.0.0.1 wx.gamesafe.qq.com
 127.0.0.1 dlied1.qq.com
-127.0.0.1 game.eve.mdt.qq.com
-127.0.0.1 mig.eve.mdt.qq.com
-127.0.0.1 mtt.eve.mdt.qq.com
-127.0.0.1 oth.eve.mdt.qq.com
-127.0.0.1 yyb.eve.mdt.qq.com
-127.0.0.1 game.str.mdt.qq.com
-127.0.0.1 mig.str.mdt.qq.com
-127.0.0.1 mtt.str.mdt.qq.com
-127.0.0.1 oth.str.mdt.qq.com
-127.0.0.1 yyb.str.mdt.qq.com
-127.0.0.1 pingma.qq.com
-127.0.0.1 idc.dir.tdm.qq.com
-127.0.0.1 vmp.qq.com
-127.0.0.1 test.vmp.qq.com
-127.0.0.1 omgmta.qq.com 
-127.0.0.1 tpns.qq.com
-127.0.0.1 mta.qq.com
-127.0.0.1 cdn.wetest.qq.com
-127.0.0.1 pingmid.qq.com
-127.0.0.1 log.tbs.qq.com
-127.0.0.1 dldir1.qq.com
-127.0.0.1 mdc.html5.qq.com
-127.0.0.1 clientrz2.itop.qq.com
-127.0.0.1 szmg.qq.com
