@@ -4,7 +4,7 @@
   if gg.getResultCount() <= 10 then
     gg.toast("Value Found")
     gg.getResults(10)
-    gg.editAll("60", gg.TYPE_FLOAT)
+    gg.editAll("80", gg.TYPE_FLOAT)
     gg.clearResults()
     gg.toast("Magic Bullet Ok")
   else
