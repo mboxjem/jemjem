@@ -1,5 +1,5 @@
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("20000;5D;0.2~0.21999999881;1065353216D;1065353216D;0;53;30;1::33", gg.TYPE_FLOAT)
+  gg.searchNumber("20000;5D;0.2~0.21999999881;65,536D;53.0;30.0;1.0::33", gg.TYPE_FLOAT)
   gg.searchNumber("0.2~0.21999999881;1", gg.TYPE_FLOAT)
   if gg.getResultCount() <= 100 then
     gg.toast("Value Found")
