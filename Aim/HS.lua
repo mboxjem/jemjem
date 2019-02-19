@@ -4,7 +4,7 @@
   if gg.getResultCount() <= 10 then
     gg.toast("Value Found")
     gg.getResults(10)
-    gg.editAll("190", gg.TYPE_FLOAT)
+    gg.editAll("250", gg.TYPE_FLOAT)
     gg.toast("Head Shoot Ok")
     gg.clearResults()
   else
