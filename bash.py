@@ -14,7 +14,6 @@ G = '\033[1;32m'
 Y = '\033[1;33m'
 C = '\033[1;36m'
 
-ask = G + '[' + W + '?' + G + '] '
 sukses = G + '[' + W + '√' + G + '] '
 eror = R + '[' + W + '!' + R + ']'
 
@@ -38,25 +37,18 @@ banner = """
 """.format(D,W,D,W,D,W,Y,W,D,W,D,W,D,W,D,W,D,Y,D,W,D,Y,D,G,W,G,D,G,W,G,Y,D,Y,D,Y,D,Y,D,Y)
 
 banner2 = """
-   {}[{}1{}]{} Pubg Mobile Global      {}[{}2{}]{} Pubg Mobile Vietnam
-   {}[{}1{}]{} Pubg Mobile Korea       {}[{}2{}]{} Quit
+   {}[{}1{}]{} Pubg Mobile Vietnam
+   {}[{}2{}]{} Pubg Mobile Korea
 """.format(G,W,G,W,G,W,G,W)
 
 print banner
 print banner2
 
-def pubggl():
-   try:
-       os.chmod("/data/data/com.pubg.krmobile/lib/libxguardian.so", 000)
-       print (sukses + "Done..")
-
 def pubgvn():
-   try:
        os.chmod("/data/data/com.pubg.krmobile/lib/libxguardian.so", 000)
        print (sukses + "Done..")
        
 def pubgkr():
-   try:
        os.chmod("/data/data/com.pubg.krmobile/lib/libxguardian.so", 000)
        print (sukses + "Done..")
 
@@ -64,10 +56,8 @@ def pubgkr():
 answ = raw_input(W + "Choose" + G + " > ")
 
 if answ == "1" or answ == "01":
-   punggl()
+   pungvn()
 elif answ == "2" or answ == "02":
-   pubgvn()
-elif answ == "3" or answ == "03":
    pubgkr()
 else:
    print (eror + " Wrong input")
