@@ -56,7 +56,7 @@ def pubgkr():
 answ = raw_input(W + "Choose" + G + " > ")
 
 if answ == "1" or answ == "01":
-   pungvn()
+   pubgvn()
 elif answ == "2" or answ == "02":
    pubgkr()
 else:
