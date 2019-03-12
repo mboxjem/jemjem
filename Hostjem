@@ -1,2 +1,7 @@
-127.0.0.1 file-igamecj.akamaized.net
-127.0.0.1 file.igamecj.com
+127.0.0.1 localhost
+::1 localhost
+
+127.0.0.1 .qq.com
+127.0.0.1 .helpshift.com
+127.0.0.1 .pubgmobile.com
+127.0.0.1 .proximabeta.com
