@@ -1,4 +1,4 @@
-gg.alert("**** JEM VIP PUBGM **** \n\n ***** V 11.0.0.1 ***** \n\n ChangeLog : \n\n •Fix Bug.")
+gg.alert("**** JEM VIP PUBGM **** \n\n ***** V 11.0.0.2 ***** \n\n ChangeLog : \n\n •Add New Function Jump No Fall Damage.")
 
 -- Main Menu
 function MAIN()
@@ -293,8 +293,9 @@ end
 function A4()
   other = gg.multiChoice({
     "1.\240\159\147\130 Multi Jump (In Game)",
-    "2.\240\159\147\130 Sit Scope (In Game)",
-    "3.\240\159\147\130 Speed Hack (In Game)",
+    "2.\240\159\147\130 Jump No Fall Damage (In Game)",
+    "3.\240\159\147\130 Sit Scope (In Game)",
+    "4.\240\159\147\130 Speed Hack (In Game)",
     "Exit"}, nil, "Script By JemJem")
   if other == nil then
   else
@@ -302,12 +303,15 @@ function A4()
       MJ()
     end
     if other[2] == true then
-      SS()
+      JN()
     end
     if other[3] == true then
-      SR()
+      SS()
     end
     if other[4] == true then
+      SR()
+    end
+    if other[5] == true then
       MAIN()
     end
     MBX = -1
@@ -317,6 +321,16 @@ end
 -- Multi Jump
 function MJ()
   local file = gg.makeRequest("https://raw.githubusercontent.com/mboxjem/jemjem/master/Other/MJ.lua")
+  local load = load(file.content)
+  if load == nil then
+    os.exit()
+  end
+  load()
+end
+
+-- Jump
+function JN()
+  local file = gg.makeRequest("https://raw.githubusercontent.com/mboxjem/jemjem/master/Other/JN.lua")
   local load = load(file.content)
   if load == nil then
     os.exit()
