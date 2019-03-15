@@ -5,8 +5,8 @@
     gg.toast("Value Found")
     gg.getResults(50)
     gg.editAll("3;2500", gg.TYPE_FLOAT)
-    gg.toast("Jump No Fall Damage Ok")
     gg.clearResults()
+    gg.toast("Jump No Fall Damage Ok")
   else
     gg.clearResults()
     gg.alert("Value Not Found, Run Script Again Or Restart The Game")
