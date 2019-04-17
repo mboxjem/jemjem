@@ -1,5 +1,5 @@
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,868,784,978;1,850,305,641;28,518;10,914::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1,868,784,978;1,850,305,641;28,518;12,132::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("1,850,305,641", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   if gg.getResultCount() <= 20 then
     gg.toast("Value Found")
