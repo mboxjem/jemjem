@@ -73,7 +73,10 @@ else
   gg.clearResults()
   gg.alert("Value Not Found, Chat JemJem for Solution")
 end
+end
+
 function B()
+-- Head Shoot
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT)
   gg.searchNumber("30.5;25", gg.TYPE_FLOAT)
