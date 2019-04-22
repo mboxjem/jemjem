@@ -128,8 +128,8 @@ function A2()
   aim = gg.multiChoice({
     "1.\240\159\147\130 Aim Bot (In Game)",
     "2.\240\159\147\130 Ultra Aim (Air Drop Weapons)(In Game)",
-    "3.\240\159\147\130 Magic Bullet (Lobby)",
-    "4.\240\159\147\130 Head Shoot (Lobby)",
+    "3.\240\159\147\130 Magic Bullet (In Game)",
+    "4.\240\159\147\130 Head Shoot (In Game)",
     "5.\240\159\147\130 Less Recoil (Lobby)",
     "6.\240\159\147\130 No Recoil (In Game)",
     "7.\240\159\147\130 No Shake/Jitter (In Game)",
