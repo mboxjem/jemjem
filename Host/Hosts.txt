@@ -1,0 +1,82 @@
+# --------------------------------------------
+#              01   0110  000    100
+#              00  00     00 0  0 00
+#              10  00010  00  00  01
+#              00  00     00      00
+#         01   10  00     01      00
+#          00010    1000  00      10
+# --------------------------------------------
+#
+# --------------------------------------------
+# F E A T U R E S
+# --------------------------------------------
+# _hosts based: based on Dnsmasq.
+# _any device: compatible with all root devices.
+# _blockings: blocks PUBGM GLOBAL hosts.
+# --------------------------------------------
+#
+# --------------------------------------------
+# T H A N K S  T O :
+# --------------------------------------------
+# @Ayik   - Admin in Yt-team & Yt-Noob
+# @JemJem
+# @Broken Team
+# --------------------------------------------
+#
+# --------------------------------------------
+# M A I N
+# --------------------------------------------
+127.0.0.1 localhost
+127.0.0.1 localhost.localdomain
+127.0.0.1 local
+255.255.255.255 broadcasthost
+::1 localhost
+::1 ip6-localhost
+::1 ip6-loopback
+fe80::1%lo0 localhost
+ff00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+216.58.221.238 172.171.188.144 132.232.173.220
+# --------------------------------------------
+# J E M H O S T  B E G I N S  G L O B A L
+# --------------------------------------------
+216.58.221.238 cs.mbgame.gamesafe.qq.com
+216.58.221.238 dlied1.qq.com
+216.58.221.238 down.qq.com
+216.58.221.238 pingma.qq.com
+216.58.221.238 android.bugly.qq.com
+216.58.221.238 apm.wetest.qq.com
+216.58.221.238 cdn.wetest.qq.com
+216.58.221.238 hk.api.unipay.qq.com
+216.58.221.238 hk.clientreport.gfm.qq.com
+216.58.221.238 hkconfig.gcloud.qq.com
+216.58.221.238 idc.dir.tdm.qq.com
+216.58.221.238 idcconfig.gcloud.qq.com
+216.58.221.238 oth.eve.mdt.qq.com
+216.58.221.238 oth.str.mdt.qq.com
+216.58.221.238 oth.update.mdt.qq.com
+216.58.221.238 qos.gcloud.qq.com
+216.58.221.238 szmg.qq.com
+216.58.221.238 vmp.qq.com
+216.58.221.238 dlied1.tcdn.qq.com
+216.58.221.238 dlied2.tcdn.qq.com
+216.58.221.238 dlied3.tcdn.qq.com
+216.58.221.238 dlied4.tcdn.qq.com
+216.58.221.238 dlied5.tcdn.qq.com
+216.58.221.238 dlied6.tcdn.qq.com
+216.58.221.238 mta.qq.com
+216.58.221.238 mtp.qq.com
+216.58.221.238 pingmid.qq.com
+172.171.188.144 dlied1.qq.com
+172.171.188.144 dlied2.qq.com
+172.171.188.144 dlied3.qq.com
+172.171.188.144 dlied4.qq.com
+172.171.188.144 dlied5.qq.com
+172.171.188.144 dlied6.qq.com
+172.171.188.144 pingma.qq.com
+172.171.188.144 oth.eve.mdt.qq.com
+132.232.173.220 cs.mbgame.gamesafe.qq.com
+132.232.173.228 oth.eve.mdt.qq.com
