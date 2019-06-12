@@ -1,4 +1,4 @@
-gg.alert("**** JEM VIP PUBGM **** \n\n ***** V 11.5.0.1 ***** \n\n ChangeLog : \n\n •Add New Function Less Recoil.\n •Fix Bug")
+gg.alert("**** JEM VIP PUBGM **** \n\n ***** V 13.0.0.1 ***** \n\n ChangeLog : \n\n •Use Latest GG Version. \n •Fix Bug.")
 
 -- Main Menu
 function MAIN()
@@ -7,7 +7,7 @@ function MAIN()
     "\240\159\147\130 Aim Menu",
     "\240\159\147\130 Land Menu",
     "\240\159\147\130 Other Menu",
-    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 11.0.0.1")
+    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 13.0.0.1")
   if menu == 1 then
     A1()
   end
