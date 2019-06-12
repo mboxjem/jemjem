@@ -1,5 +1,5 @@
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("96D;539,246,599D;8,200D;1,194,380,042D::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setRanges(gg.REGION_VIDEO)
+  gg.searchNumber("655,370;1,080,033,292;8,200;1,194,380,045;786,441;1,661,239,308;671,236,103::25", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   if gg.getResultCount() <= 50 then
     gg.toast("Value Found")
