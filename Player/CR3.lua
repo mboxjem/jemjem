@@ -1,4 +1,4 @@
-  gg.setRanges(gg.REGION_BAD)
+  gg.setRanges(gg.REGION_VIDEO)
   gg.searchNumber("69,778D;1,669,332,992D;11D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("11", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   if gg.getResultCount() <= 50 then
