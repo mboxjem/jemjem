@@ -1,4 +1,4 @@
-gg.alert("**** JEM VIP PUBGM **** \n\n ***** V 13.0.0.1 ***** \n\n ChangeLog : \n\n •Use Latest GG Version. \n •Fix Bug.")
+gg.alert("**** JEM VIP PUBGM **** \n\n ***** V 13.0.0.2 ***** \n\n ChangeLog : \n\n •Use Latest GG Version. \n •Add Red Car Color.")
 
 -- Main Menu
 function MAIN()
@@ -7,7 +7,7 @@ function MAIN()
     "\240\159\147\130 Aim Menu",
     "\240\159\147\130 Land Menu",
     "\240\159\147\130 Other Menu",
-    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 13.0.0.1")
+    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 13.0.0.2")
   if menu == 1 then
     A1()
   end
@@ -31,7 +31,8 @@ function A1()
   player = gg.multiChoice({
     "1.\240\159\147\130 WallHack 650, 625, 450 (Lobby)",
     "2.\240\159\147\130 Color (Lobby)",
-    "3.\240\159\147\130 Antenna Loop (In Game)",
+    "3.\240\159\147\130 Red Car (Lobby)",
+    "4.\240\159\147\130 Antenna Loop (In Game)",
     "Exit"}, nil, "Script By JemJem")
   if player == nil then
   else
@@ -42,9 +43,12 @@ function A1()
       CR()
     end
     if player[3] == true then
-      AT()
+      CC()
     end
     if player[4] == true then
+      AT()
+    end
+    if player[5] == true then
       MAIN()
     end
     MBX = -1
@@ -106,6 +110,16 @@ end
 -- Green
 function CR3()
   local file = gg.makeRequest("https://raw.githubusercontent.com/mboxjem/jemjem/master/Player/CR3.lua")
+  local load = load(file.content)
+  if load == nil then
+    os.exit()
+  end
+  load()
+end
+
+-- Red Car
+function CC()
+  local file = gg.makeRequest("https://raw.githubusercontent.com/mboxjem/jemjem/master/Player/CC1.lua")
   local load = load(file.content)
   if load == nil then
     os.exit()
