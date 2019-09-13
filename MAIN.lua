@@ -1,4 +1,4 @@
-gg.alert("**** JEM VIP PUBGM **** \n\n ***** V 13.0.0.2 ***** \n\n ChangeLog : \n\n •Use Latest GG Version. \n •Add Red Car Color.")
+gg.alert("**** JEMJEM SCRIPT PUBGM **** \n\n ***** V 14.0.0.1 ***** \n\n ChangeLog : \n\n •Fix Value. \n •Add function.")
 
 -- Main Menu
 function MAIN()
@@ -7,7 +7,7 @@ function MAIN()
     "\240\159\147\130 Aim Menu",
     "\240\159\147\130 Land Menu",
     "\240\159\147\130 Other Menu",
-    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 13.0.0.2")
+    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 14.0.0.1")
   if menu == 1 then
     A1()
   end
@@ -140,7 +140,7 @@ end
 -- Aim Menu
 function A2()
   aim = gg.multiChoice({
-    "1.\240\159\147\130 Aim Bot (In Game)",
+    "1.\240\159\147\130 Aim Bot (Lobby)",
     "2.\240\159\147\130 Ultra Aim (Air Drop Weapons)(In Game)",
     "3.\240\159\147\130 Magic Bullet (In Game)",
     "4.\240\159\147\130 Head Shoot (In Game)",
@@ -251,45 +251,31 @@ end
 -- Land Menu
 function A3()
   land = gg.multiChoice({
-    "1.\240\159\147\130 No Grass (In Game)",
-    "2.\240\159\147\130 Black Sky (In Game)",
+    "1.\240\159\147\130 No Fog (Lobby)",
+    "2.\240\159\147\130 No Grass (In Game)",
+    "3.\240\159\147\130 Black Sky (In Game)",
     "Exit"}, nil, "Script By JemJem")
   if land == nil then
   else
     if land[1] == true then
-      NG()
+      NF()
     end
     if land[2] == true then
-      BS()
+      NG()
     end
     if land[3] == true then
+      BS()
+    end
+    if land[4] == true then
       MAIN()
     end
     MBX = -1
   end
 end
 
--- No Grass
+-- No Fog
 function NG()
-  grass = gg.choice({
-    "No Grass On",
-    "No Grass Off",
-    "Exit"}, nil, "Script By JemJem")
-  if grass == 1 then
-    NG1()
-  end
-  if grass == 2 then
-    NG2()
-  end
-  if grass == 3 then
-    MAIN()
-  end
-  MBX = -1
-end
-
--- No Grass On
-function NG1()
-  local file = gg.makeRequest("https://raw.githubusercontent.com/mboxjem/jemjem/master/Land/NG1.lua")
+  local file = gg.makeRequest("https://raw.githubusercontent.com/mboxjem/jemjem/master/Land/NF.lua")
   local load = load(file.content)
   if load == nil then
     os.exit()
@@ -297,9 +283,9 @@ function NG1()
   load()
 end
 
--- No Grass Off
-function NG2()
-  local file = gg.makeRequest("https://raw.githubusercontent.com/mboxjem/jemjem/master/Land/NG2.lua")
+-- No Grass
+function NG()
+  local file = gg.makeRequest("https://raw.githubusercontent.com/mboxjem/jemjem/master/Land/NG.lua")
   local load = load(file.content)
   if load == nil then
     os.exit()
