@@ -274,7 +274,7 @@ function A3()
 end
 
 -- No Fog
-function NG()
+function NF()
   local file = gg.makeRequest("https://raw.githubusercontent.com/mboxjem/jemjem/master/Land/NF.lua")
   local load = load(file.content)
   if load == nil then
