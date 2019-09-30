@@ -1,1 +1,2 @@
+#!/system/bin/sh
 touch >> /storage/emulated/0/sukses.txt
