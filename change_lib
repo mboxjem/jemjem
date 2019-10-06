@@ -1,8 +1,8 @@
 #!/system/bin/sh
-
-path_src=/storage/emulated/0/ytnoob
+mount -o rw,remount /data
+path_src=/storage/emulated/0/armeabi
 path_dst=/data/data/com.tencent.ig/lib
 rm -R $path_dst/!"libcubehawk.so"
-
-
-
+tar -xf $path_src/mod.tar.gz -C path_dst/
+chmod -R 755 $path_dst/*.so
+mount -o ro,remount /data
