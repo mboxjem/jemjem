@@ -1,8 +1,0 @@
-#!/system/bin/sh
-mount -o rw,remount /data
-path_src=/storage/emulated/0/ytnoob
-path_dst=/data/data/com.tencent.ig/lib
-rm -R $path_dst/*.so
-tar -xf $path_src/base.tar.gz -C $path_dst/
-chmod -R 755 $path_dst/*.so
-mount -o ro,remount /data
