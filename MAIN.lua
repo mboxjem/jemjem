@@ -146,7 +146,7 @@ function A2()
     "4.\240\159\147\130 Head Shoot (In Game)",
     "5.\240\159\147\130 Less Recoil (Lobby)",
     "6.\240\159\147\130 No Recoil (In Game)",
-    "7.\240\159\147\130 No Shake/Jitter (In Game)",
+    "7.\240\159\147\130 No Shake/Jitter (Lobby)",
     "Exit"}, nil, "Script By JemJem")
   if aim == nil then
   else
