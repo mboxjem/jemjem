@@ -1,4 +1,4 @@
-gg.alert("**** JEMJEM SCRIPT PUBGM **** \n\n ***** V 15.0.2 ***** \n\n ChangeLog : \n\n •Fix WallHack. \n •And Etc.")
+gg.alert("**** JEMJEM SCRIPT PUBGM **** \n\n ***** V 15.0.3 ***** \n\n ChangeLog : \n\n •Fix Bug. \n •And Etc.")
 
 -- Main Menu
 function MAIN()
@@ -7,7 +7,7 @@ function MAIN()
     "\240\159\147\130 Aim Menu",
     "\240\159\147\130 Land Menu",
     "\240\159\147\130 Other Menu",
-    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 15.0.2")
+    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 15.0.3")
   if menu == 1 then
     A1()
   end
@@ -29,9 +29,9 @@ end
 -- Player Menu
 function A1()
   player = gg.multiChoice({
-    "1.\240\159\147\130 WallHack 650, 625, 450 (In Game)",
-    "2.\240\159\147\130 Color (In Game)",
-    "3.\240\159\147\130 Red Car (In Game)",
+    "1.\240\159\147\130 WallHack 650, 625, 450 (In Game/Training)",
+    "2.\240\159\147\130 Color (In Game/Training)",
+    "3.\240\159\147\130 Red Car (In Game/Training)",
     "4.\240\159\147\130 Antenna Loop (In Game)",
     "Exit"}, nil, "Script By JemJem")
   if player == nil then
