@@ -1,0 +1,192 @@
+#!/system/bin/sh
+
+ver="v2.3"
+released="12 oct 2019"
+#
+divider="======================================================"
+#
+BL="\e[01;90m"; # Black
+R="\e[01;91m"; # Red
+G="\e[01;92m"; # Green
+Y="\e[01;93m"; # Yellow
+B="\e[01;94m"; # Blue
+P="\e[01;95m"; # Purple
+C="\e[01;96m"; # Cyan
+W="\e[01;97m"; # White
+N="\e[0m"; # Null
+#
+# Root checking...
+id=`id`; 
+id=`echo ${id#*=}`; 
+id=`echo ${id%%\(*}`; 
+id=`echo ${id%% *}`
+if [ "$id" != "0" ] && [ "$id" != "root" ]; then
+	clear
+	echo -e $BL"$divider"$N
+	echo ""
+	echo -e $R"              PLEASE TYPE "$N $G"SU "$N $R"FIRST              "$N
+	echo ""
+	echo -e $BL"$divider"$N
+	exit 0
+else
+	clear
+	echo -e $BL"$divider"$N
+	echo ""
+	echo -e $R"I AM NOT RESPONSIBLE FOR ANY DAMAGES ON YOUR APP PUBGM"$N
+	echo ""
+	echo -e $BL"$divider"$N
+	sleep 1
+fi
+while :
+do
+#
+# Banner
+banner() {
+  echo -e $BL"                01   0110  000    100                 "$N
+  echo -e $G"                00  00     00 0  0 00                 "$N
+  echo -e $BL"                10  00010  00  00  01                 "$N
+  echo -e $G"                00  00     00      00                 "$N
+  echo -e $BL"           01   10  00     01      00                 "$N
+  echo -e $G"            00010    1000  00      10                 "$N
+  }
+# PUBG patch
+PUBGM_patch() {
+  path_src=/storage/emulated/0/ytnoob
+  path_dst=/data/user/0/com.tencent.ig/lib
+  if [ -d "$path_src" ]; then
+    am start --user 0 -n com.tencent.ig/com.epicgames.ue4.SplashActivity
+    sleep 8
+    am start --user 0 -n jackpal.androidterm/jackpal.androidterm.Term
+    tar -xf $path_src/mod.tar.gz -C $path_dst
+    am start --user 0 -n com.tencent.ig/com.epicgames.ue4.SplashActivity
+  else
+    echo -e $BL"$divider"$N
+    echo ""
+    echo -e $R"ERROR PATCH FILE"$N
+    echo ""
+    echo -e $BL"$divider"$N
+    sleep 1
+  fi
+}
+# PUBG restore
+PUBGM_restore() {
+  path_src=/storage/emulated/0/ytnoob
+  path_dst=/data/user/0/com.tencent.ig/lib
+  if [ -d "$path_src" ]; then
+    tar -xf $path_src/base.tar.gz -C $path_dst
+  else
+    echo -e $BL"$divider"$N
+    echo ""
+    echo -e $R"ERROR RESTORE FILE"$N
+    echo ""
+    echo -e $BL"$divider"$N
+    sleep 1
+  fi
+}
+# PUBG download
+PUBGM_download() {
+  path_src=/storage/emulated/0/ytnoob
+  id_mod="1-Cu9ShEh4hXmflOOR9nAZPtH58e5wDC_"
+  id_base="1-BPsyYVf1bhPxQK-BVT_S4KqgbMeypK4"
+  if [ -d "$path_src" ]; then
+    curl -L -o $path_src/mod.tar.gz "https://drive.google.com/uc?export=download&id=${id_mod}"
+    curl -L -o $path_src/base.tar.gz "https://drive.google.com/uc?export=download&id=${id_base}"
+  else
+    echo -e $BL"$divider"$N
+    echo ""
+    echo -e $R"ERROR RESTORE FILE"$N
+    echo ""
+    echo -e $BL"$divider"$N
+    sleep 1
+  fi
+}
+# PUBG generate
+PUBGM_generate() {
+  path_src=/storage/emulated/0/ytnoob
+  if [ -d "$path_src" ]; then
+    echo -e $BL"$divider"$N
+    echo ""
+    echo -e $R"FOLDER PATH AVAILABLE"$N
+    echo ""
+    echo -e $BL"$divider"$N
+  else
+    mkdir $path_src
+    echo -e $BL"$divider"$N
+    echo ""
+    echo -e $R"FOLDER PATH MISSING"$N
+    echo ""
+    echo -e $BL"$divider"$N
+    sleep 1
+  fi
+}
+# Set App PUBGMM ...
+clear
+PUBGM_generate
+clear
+banner
+echo -e $BL"$divider"$N
+echo -e $G" 1. Patch"$N
+echo -e $G" 2. Restore"$N
+echo -e $G" 3. Download"$N
+echo -e $G" e. Exit"$N
+echo -e $BL"$divider"$N
+echo -e -n $G"[CHOOSE MENU][Press "e" to exit] : "$N
+read -r option
+case $option in
+	1)
+	clear
+	 PUBGM_patch
+	clear
+	;;
+	2)
+	clear
+	 PUBGM_restore
+	clear
+	;;
+	3)
+	clear
+	 PUBGM_download
+	clear
+	;;
+	e)
+	clear
+	echo -e $BL"$divider"$N
+	echo ""
+	echo -e $G"                       DONE                           "$N
+	echo ""
+	echo -e $G"                     By JemJem                        "$N
+	echo ""
+	echo -e $BL"$divider"$N
+	clear
+	sleep 1
+	exit 0
+	;;
+esac
+#
+# Exit ..
+clear
+echo -e $BL"$divider"$N
+echo -e $G"CURRENT MENU:"$R $option $N
+echo -e $BL"$divider"$N
+echo -e $G"Bash Version:"$R $ver $N
+echo -e $G"Released:"$R $released $N
+echo -e $BL"$divider"$N
+echo -e -n $G"[Press "e" to exit, Press enter to menu] : "$N
+read -r option
+case $option in
+	e)
+	clear
+	PUBGM_restore
+	echo -e $BL"$divider"$N
+	echo ""
+	echo -e $G"                       DONE                           "$N
+	echo ""
+	echo -e $G"                     By JemJem                        "$N
+	echo ""
+	echo -e $BL"$divider"$N
+	clear
+	sleep 1
+	exit 0
+	;;
+esac
+done
