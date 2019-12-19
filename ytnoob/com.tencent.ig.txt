@@ -1,0 +1,5 @@
+18293
+Var #CA2BED27|ca2bed27|1|0|1|0|0|0|rw-p|/data/app/com.tencent.ig-JNr_5EKo1HxL7xmuJ5KyuQ==/lib/arm/libtersafe.so:bss|d27
+Var #CA2BED28|ca2bed28|1|0|1|0|0|0|rw-p|/data/app/com.tencent.ig-JNr_5EKo1HxL7xmuJ5KyuQ==/lib/arm/libtersafe.so:bss|d28
+Var #CA2BED29|ca2bed29|1|0|1|0|0|0|rw-p|/data/app/com.tencent.ig-JNr_5EKo1HxL7xmuJ5KyuQ==/lib/arm/libtersafe.so:bss|d29
+Var #CA2BED2A|ca2bed2a|1|0|1|0|0|0|rw-p|/data/app/com.tencent.ig-JNr_5EKo1HxL7xmuJ5KyuQ==/lib/arm/libtersafe.so:bss|d2a
