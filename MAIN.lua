@@ -1,4 +1,4 @@
-gg.alert("**** JEMJEM SCRIPT PUBGM **** \n\n ***** V 15.0.3 ***** \n\n ChangeLog : \n\n •Fix Bug. \n •And Etc.")
+gg.alert("**** JEMJEM SCRIPT PUBGM **** \n\n ***** V 17.0.1 ***** \n\n ChangeLog : \n\n •Fix Value. \n •And Etc.")
 
 -- Main Menu
 function MAIN()
@@ -7,7 +7,7 @@ function MAIN()
     "\240\159\147\130 Aim Menu",
     "\240\159\147\130 Land Menu",
     "\240\159\147\130 Other Menu",
-    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 15.0.3")
+    "✓ Exit, Script By JemJem"}, nil, " ********** JEM JEM ********** \n 17.0.1")
   if menu == 1 then
     A1()
   end
