@@ -26,13 +26,13 @@ function bypass_pubg(){
 	path_dir="/storage/emulated/0/Android/data/com.tencent.ig"
 	
 	while true; do
-	find $path_dir -not \( -name 'SrcVersion.ini' -or -name '*.pak' -or -name '*.sav' \) -type f -delete > /dev/null 2>&1
-	find $path_dir -not \( -name 'Paks' -or -name 'SaveGames' \) -type d  -delete > /dev/null 2>&1
-	done
+	su -c find $path_dir -not \( -name 'SrcVersion.ini' -or -name '*.pak' -or -name '*.sav' \) -type f -delete > /dev/null 2>&1
+	su -c find $path_dir -not \( -name 'Paks' -or -name 'SaveGames' \) -type d  -delete > /dev/null 2>&1
+	done &
 }
 
 function open_pubg(){
-	
+	am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
     display_output 5 40 "Open"
 }
 
