@@ -29,9 +29,9 @@ systemctl restart stunnel4.service
 wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/badvpn/badvpn-1.999.128.tar.bz2
 tar xf badvpn-1.999.128.tar.bz2
 mv badvpn-1.999.128 badvpn
-mkdir ~/ssh/badvpn/build
-cd ~/ssh/badvpn/build
-cmake ~/ssh/badvpn -DBUILD_NOTHING_BY_DEFAULT=1 -DBUILD_TUN2SOCKS=1 -DBUILD_UDPGW=1
+mkdir ~/badvpn/build
+cd ~/badvpn/build
+cmake ~/badvpn -DBUILD_NOTHING_BY_DEFAULT=1 -DBUILD_TUN2SOCKS=1 -DBUILD_UDPGW=1
 make install
 cat <<EOF >/etc/systemd/system/badvpn.service
 [Unit]
