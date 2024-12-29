@@ -10,9 +10,6 @@ WALLET=$2
 WORKER=$3
 PASSWORD=$4
 
-apt update -y
-apt install wget tar libsodium-dev -y
-
 cd /tmp || exit
 
 if wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64.tar.gz; then
