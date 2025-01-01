@@ -1,21 +1,102 @@
 #!/bin/sh
 
-if [ "$#" -ne 4 ]; then
-    echo "Usage: $0 <pool> <wallet> <worker> <password>"
+if [ "$#" -ne 5 ]; then
+    echo "Usage: $0 <tool> <pool> <wallet> <worker> <password>"
     exit 1
 fi
 
-POOL=$1
-WALLET=$2
-WORKER=$3
-PASSWORD=$4
+TOOL=$1
+POOL=$2
+WALLET=$3
+WORKER=$4
+PASSWORD=$5
+
+# get the number of threads from the system
+THREADS=$(nproc) || grep -c ^processor /proc/cpuinfo || lscpu | grep -e '^CPU(s):' | awk '{print $2}' || echo 1
 
 cd /tmp || exit
 
-if wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64.tar.gz; then
-    tar -xf hellminer_linux64.tar.gz
-    ./hellminer -c "$POOL" -u "$WALLET.$WORKER" -p "$PASSWORD"
-else
-    echo "Failed to download hellminer"
-    exit 1
+# check if the tool ccmier/hellminer
+if [ "$TOOL" = "ccminer" ]; then
+    apt install libsodium-dev libomp5 -y
+    ccminer_setup
+elif [ "$TOOL" = "hellminer" ]; then
+    apt install libsodium-dev -y
+    hellminer_setup
 fi
+
+# setup ccminer
+ccminer_setup() {
+    if wget https://github.com/Oink70/ccminer-verus/releases/download/v3.8.3a-CPU/ccminer-v3.8.3a-oink_Ubuntu_18.04 -o ccm; then
+        chmod +x ccm
+        generate_ccm_config
+        ./ccm -c ccm.conf
+    else
+        echo "Failed to download ccminer"
+        exit 1
+    fi
+}
+
+# setup hellminer
+hellminer_setup() {
+    if wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64.tar.gz; then
+        tar -xf hellminer_linux64.tar.gz
+        ./hellminer -c "$POOL" -u "$WALLET.$WORKER" -p "$PASSWORD"
+    else
+        echo "Failed to download hellminer"
+        exit 1
+    fi
+}
+
+# generate ccminer config
+generate_ccm_config() {
+    cat >ccm.conf <<EOF
+{
+    "pools": [
+        {
+            "name": "EU-LUCKPOOL-HIGH",
+            "url": "stratum+tcp://eu.luckpool.net:3957",
+            "timeout": 180,
+            "disabled": 0
+        },
+        {
+            "name": "ASIA-LUCKPOOL-HIGH",
+            "url": "stratum+tcp://ap.luckpool.net:3957",
+            "timeout": 180,
+            "disabled": 0
+        },
+        {
+            "name": "US-LUCKPOOL-HIGH",
+            "url": "stratum+tcp://us.luckpool.net:3957",
+            "timeout": 180,
+            "disabled": 0
+        },
+        {
+            "name": "EU-LUCKPOOL-LOW",
+            "url": "stratum+tcp://eu.luckpool.net:3956",
+            "timeout": 180,
+            "disabled": 0
+        },
+        {
+            "name": "ASIA-LUCKPOOL-LOW",
+            "url": "stratum+tcp://ap.luckpool.net:3956",
+            "timeout": 180,
+            "disabled": 0
+        },
+        {
+            "name": "US-LUCKPOOL-LOW",
+            "url": "stratum+tcp://us.luckpool.net:3956",
+            "timeout": 180,
+            "disabled": 0
+        }
+    ],
+    "user": "$WALLET.$WORKER",
+    "pass": "$PASSWORD",
+    "algo": "verus",
+    "threads": $THREADS,
+    "cpu-priority": 1,
+    "cpu-affinity": -1,
+    "retry-pause": 10
+}
+EOF
+}
