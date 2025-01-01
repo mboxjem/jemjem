@@ -38,18 +38,9 @@ THREADS=$(nproc) || grep -c ^processor /proc/cpuinfo || lscpu | grep -e '^CPU(s)
 
 cd /tmp || exit
 
-# check if the tool ccmier/hellminer
-if [ "$TOOL" = "ccminer" ]; then
-    apt install libsodium-dev libomp5 -y
-    ccminer_setup
-elif [ "$TOOL" = "hellminer" ]; then
-    apt install libsodium-dev -y
-    hellminer_setup
-fi
-
 # setup ccminer
 ccminer_setup() {
-    if wget https://github.com/Oink70/ccminer-verus/releases/download/v3.8.3a-CPU/ccminer-v3.8.3a-oink_Ubuntu_18.04 -o ccm; then
+    if wget https://github.com/Oink70/ccminer-verus/releases/download/v3.8.3a-CPU/ccminer-v3.8.3a-oink_Ubuntu_18.04 -O ccm; then
         chmod +x ccm
         generate_ccm_config
         ./ccm -c ccm.conf
@@ -122,3 +113,12 @@ generate_ccm_config() {
 }
 EOF
 }
+
+# check if the tool is ccminer or hellminer
+if [ "$TOOL" = "ccminer" ]; then
+    apt install libsodium-dev libomp5 -y
+    ccminer_setup
+elif [ "$TOOL" = "hellminer" ]; then
+    apt install libsodium-dev -y
+    hellminer_setup
+fi
