@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$#" -ne 5 ]; then
+if [ "$#" -lt 4 ] || [ "$#" -gt 5 ]; then
     echo "Usage: $0 <tool> <pool> <wallet> <worker> <password>"
     exit 1
 fi
@@ -10,6 +10,28 @@ POOL=$2
 WALLET=$3
 WORKER=$4
 PASSWORD=$5
+
+# Check if the tool is either ccminer or hellminer
+if [ "$TOOL" != "ccminer" ] && [ "$TOOL" != "hellminer" ]; then
+    echo "Invalid tool specified. Use 'ccminer' or 'hellminer'."
+    exit 1
+fi
+
+# Check if pool is provided only if using hellminer
+if [ "$TOOL" = "hellminer" ] && [ -z "$POOL" ]; then
+    echo "Pool argument is required when using hellminer."
+    exit 1
+fi
+
+# If using ccminer, shift arguments to handle optional pool
+if [ "$TOOL" = "ccminer" ]; then
+    if [ "$#" -eq 4 ]; then
+        WALLET=$2
+        WORKER=$3
+        PASSWORD=$4
+        POOL=""
+    fi
+fi
 
 # get the number of threads from the system
 THREADS=$(nproc) || grep -c ^processor /proc/cpuinfo || lscpu | grep -e '^CPU(s):' | awk '{print $2}' || echo 1
